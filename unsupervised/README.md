@@ -55,8 +55,11 @@ Below are the WCSS and Silhouette Score plots that were used to select the optim
 ## Cluster Visualization:
 To visualize the clusters and verify their distinctiveness, we used the following methods:
 - **3D Cluster Visualization with PCA**: We used the first three principal components to generate a 3D scatter plot of the clusters, helping us visually confirm the separation between clusters.
+
 ![3D Cluster Visualization](./plots/3d_cluster_visualization.png)
+
 - **t-SNE Visualization**: A 2D visualization technique, t-SNE, was applied to map the high-dimensional feature maps into a two-dimensional space for a more intuitive inspection of cluster separations.
+
 ![t-SNE Visualization](./plots/tsne_visualization.png)
 
 ## 3. Cluster Descriptions and Inference (kmeans_clusteranalysis_discriptions.ipynb)
@@ -89,7 +92,7 @@ cluster_stats = {
 ```
 
 ### LLM for Cluster Descriptions:
-- The Llama-3.1-MedPalm2-imitate-8B-Instruct LLM generated detailed descriptions for each cluster based on the computed statistics.
+- The **Llama-3.1-MedPalm2-imitate-8B-Instruct** LLM generated detailed descriptions for each cluster based on the computed statistics.
 - These descriptions provided clinicians with interpretability, explaining what each cluster represented and highlighting potential abnormalities.
 
 ## Analysis of the Approach and Benefits

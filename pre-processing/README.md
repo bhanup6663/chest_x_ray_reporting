@@ -27,15 +27,12 @@ The pre-processing pipeline consists of two main stages:
 ---
 
 ### 2. `Dataset-pre-processing.ipynb`
-**Description**: This notebook handles the following:
-1. **Image Resizing**: All PNG images are resized to 512x512 dimensions using OpenCV to optimize for computational efficiency.
-2. **Bounding Box Normalization**: Bounding boxes are normalized based on the resized image dimensions to ensure their accuracy.
-3. **Bounding Box Visualization**: Bounding boxes are drawn on the images to visually confirm correct placement and size after normalization.
+**Description**: This notebook handles image processing and visualization.
 
 #### Key Steps:
-- **Resizing**: Each image is resized to 512x512 pixels and saved to a specified output folder.
-- **Bounding Box Normalization**: Bounding box coordinates are normalized to a scale of [0, 1] based on the image dimensions, ensuring compatibility with resized images.
-- **Visualization**: Bounding boxes and class labels are drawn on the resized images to verify their correctness.
+- **Image Resizing and Normalization**: All PNG images are resized to 512x512 pixels using OpenCV for computational efficiency, and bounding box coordinates are normalized to a [0, 1] scale based on the resized dimensions to maintain accuracy.
+- **Bounding Box Drawing**: Bounding boxes are drawn on the resized images, ensuring correct placement and size after normalization.
+- **Visualization and Verification**: The processed images with visualized bounding boxes are saved to a specified output folder for verification of their correctness.
 
 #### Example Workflow:
 - Load the bounding box data from the CSV file.

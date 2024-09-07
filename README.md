@@ -13,10 +13,6 @@ This project aims to address this problem by developing an AI system that can:
 2. **Cluster image features** based on similarity, creating descriptive summaries for different groups of abnormalities.
 3. **Generate a natural language report** based on the detected issues and their clinical relevance.
 
-## System Architecture
-
-![image](https://github.com/user-attachments/assets/d9e8f630-3f17-47f4-b329-e7ef5c69d1c4)
-
 
 ## Why This Approach?
 
@@ -37,6 +33,8 @@ Rather than simply stating, “this patient has a pleural effusion,” the syste
 ## System Workflow - The Architecture
 
 The system architecture follows a two-branch pipeline: **Supervised** and **Unsupervised Learning**, both contributing to the final report.
+
+![image](https://github.com/user-attachments/assets/d9e8f630-3f17-47f4-b329-e7ef5c69d1c4)
 
 ### 1. Image Preprocessing
 

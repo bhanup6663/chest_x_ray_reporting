@@ -55,10 +55,7 @@ The second branch uses **feature extraction** and **clustering** to provide a br
 - These features are reduced in dimensionality using **Incremental PCA**, and then grouped into **20 clusters** using **K-means**.
 - Each cluster is assigned a descriptive summary by a pre-trained **LLM**. This description provides insights such as common characteristics and potential conditions the cluster is associated with.
 
-#### Why Clustering? 
-
-- X-ray images are complex, and individual abnormalities don't tell the whole story. Clustering allows us to **group images based on overall similarity**, giving radiologists a way to see how this patient’s X-ray compares to others.
-- By associating the image with a specific cluster, the system provides additional **clinical context** that enhances the overall interpretation.
+> **Why Clustering?** X-ray images are complex, and individual abnormalities don't tell the whole story. Clustering allows us to **group images based on overall similarity**, giving radiologists a way to see how this patient’s X-ray compares to others.By associating the image with a specific cluster, the system provides additional **clinical context** that enhances the overall interpretation.
 
 ---
 
@@ -68,7 +65,7 @@ In medical image analysis, it's often challenging to **interpret complex pattern
 - **Scalability**: K-means works well with large datasets when combined with **PCA** for dimensionality reduction.
 - **Interpretability**: Each cluster represents a group of images with shared characteristics. This makes it easier for the LLM to provide a **clear description** of the cluster’s clinical significance.
 
-### Why Use WCSS and Silhouette Score?
+Why Use WCSS and Silhouette Score?
 
 To choose the optimal number of clusters, we used the **Within-Cluster Sum of Squares (WCSS)** and **Silhouette Score**:
 - **WCSS** measures how tight the clusters are. Lower values mean the data points within each cluster are closer together, indicating better-defined clusters.
